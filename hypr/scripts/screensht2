@@ -1,0 +1,6 @@
+if [ $1 = "full" ]; then
+	#QT_QPA_PLATFORM flameshot full ;
+  grim -g "$(slurp -o -r -c '#ff0000ff')" - | satty --filename - --output-filename ~/Imágenes/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png;
+elif [ $1 = "area" ]; then
+  grim -g "$(slurp -b 000000a0)" - | satty --filename - --copy-command wl-copy;
+fi

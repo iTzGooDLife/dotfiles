@@ -1,3 +1,2 @@
 #!/bin/bash
-swaybg -m fit -i ~/.config/hypr/wallpaper.jpg
-
+swaybg -m fit -i ~/.config/hypr/wallpapers/wallpaper.jpg
